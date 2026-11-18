@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Modo 1: el plugin DiffDrive de Gazebo calcula cinematica y odometria.
+       OJO: la separacion entre ruedas es 0.36 m (2 x (base_width/2 + wheel_ygap) = 2 x 0.18),
+       no 0.4 m como estaba en el laboratorio anterior. -->
+  <gazebo>
+    <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+      <left_joint>drivewhl_l_joint</left_joint>
+      <right_joint>drivewhl_r_joint</right_joint>
+      <wheel_separation>0.36</wheel_separation>
+      <wheel_radius>0.10</wheel_radius>
+      <odom_publish_frequency>30</odom_publish_frequency>
+      <topic>cmd_vel</topic>
+      <odom_topic>odom</odom_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_link</child_frame_id>
+      <tf_topic>tf</tf_topic>
+    </plugin>
+    <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher"/>
+  </gazebo>
+</robot>
