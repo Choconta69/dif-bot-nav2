@@ -1,0 +1,11 @@
+libardo@libardo-VirtualBox:~$ swapon --show
+free -h
+NAME      TYPE SIZE USED PRIO
+/swap.img file 2.9G 316K   -1
+/swapfile file   4G   0B   -1
+               total        used        free      shared  buff/cache   available
+Mem:           2.9Gi       1.3Gi       331Mi        35Mi       1.5Gi       1.6Gi
+Swap:          6.9Gi       316Ki       6.9Gi
+libardo@libardo-VirtualBox:~$ find ~ -maxdepth 5 \( -name "gz_control.xacro" -o -name "ros2_control.xacro" -o -name "robot.urdf.xacro" \) 2>/dev/null
+find ~ -maxdepth 3 -name package.xml 2>/dev/null | head -30
+libardo@libardo-VirtualBox:~$ 
