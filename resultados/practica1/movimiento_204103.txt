@@ -1,0 +1,7 @@
+== modo: plugin_gazebo  tipo: geometry_msgs/msg/Twist  hora: Wed Nov 18 08:41:11 PM -05 2026
+x inicial: 1.5732865142444159e-18
+== publicando 0.2 m/s durante 5 s
+== espera 3 s sin publicar
+velocidad final (debe ser ~0): 0.19999999999998352
+x final: 2.2592000000109382
+distancia: 2.259 m (esperado ~1.0 m)

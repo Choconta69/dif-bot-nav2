@@ -1,0 +1,41 @@
+== hora: Wed Nov 18 08:40:16 PM -05 2026
+== modo: plugin_gazebo
+== nodos que publican /odom:
+Node name: bridge_gz_control
+Node namespace: /
+Endpoint type: PUBLISHER
+== estadisticas de Gazebo:
+sim_time {
+  sec: 81
+  nsec: 24000000
+}
+real_time {
+  sec: 87
+  nsec: 28960888
+}
+iterations: 20256
+real_time_factor: 0.98161315852439
+step_size {
+  nsec: 4000000
+}
+
+== frecuencia /odom (20 s):
+	min: 0.026s max: 0.086s std dev: 0.00754s window: 100
+average rate: 26.886
+	min: 0.030s max: 0.093s std dev: 0.00640s window: 100
+== top:
+top - 20:40:48 up  2:29,  1 user,  load average: 1.67, 0.63, 0.34
+Tasks: 227 total,   2 running, 219 sleeping,   5 stopped,   1 zombie
+%Cpu(s): 27.3 us, 22.7 sy,  0.0 ni, 45.5 id,  0.0 wa,  0.0 hi,  4.5 si,  0.0 st 
+MiB Mem :   2968.3 total,    243.3 free,   1979.9 used,    959.5 buff/cache     
+MiB Swap:   2971.0 total,   2514.8 free,    456.2 used.    988.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6977 libardo   20   0 2306408 278012 139368 S  33.3   9.1   0:53.29 ruby
+   6979 libardo   20   0 1253212  53436  42104 S  16.7   1.8   0:15.97 paramet+
+   6980 libardo   20   0 1253844  54684  43016 S  16.7   1.8   0:13.92 paramet+
+   7174 libardo   20   0   14856   5660   3512 R   8.3   0.2   0:00.03 top
+      1 root      20   0   23572  13004   9068 S   0.0   0.4   0:06.25 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+

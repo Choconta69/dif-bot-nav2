@@ -1,0 +1,55 @@
+== hora: Wed Nov 18 07:32:00 PM -05 2026
+== modo: ros2_control
+== nodos que publican /odom:
+Node name: diff_drive_controller
+Node namespace: /
+Endpoint type: PUBLISHER
+== estadisticas de Gazebo:
+sim_time {
+  sec: 46
+  nsec: 416000000
+}
+real_time {
+  sec: 54
+  nsec: 750295816
+}
+iterations: 11604
+real_time_factor: 0.99821494212973649
+step_size {
+  nsec: 4000000
+}
+
+sim_time {
+  sec: 46
+  nsec: 420000000
+}
+real_time {
+  sec: 54
+  nsec: 754236364
+}
+iterations: 11605
+real_time_factor: 1.0150872416729855
+step_size {
+  nsec: 4000000
+}
+
+== frecuencia /odom (20 s):
+	min: 0.019s max: 0.055s std dev: 0.00972s window: 100
+average rate: 28.736
+	min: 0.017s max: 0.049s std dev: 0.00977s window: 100
+== top:
+top - 19:32:29 up  1:20,  1 user,  load average: 3.74, 4.73, 5.28
+Tasks: 256 total,   1 running, 249 sleeping,   5 stopped,   1 zombie
+%Cpu(s): 30.8 us, 19.2 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   2968.3 total,    289.5 free,   1950.2 used,    937.8 buff/cache     
+MiB Swap:   2971.0 total,   2478.7 free,    492.3 used.   1018.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6035 libardo   20   0 2553336 322072 165504 S  76.9  10.6   0:50.50 ruby
+   6038 libardo   20   0 1253208  54488  42132 S  15.4   1.8   0:11.40 paramet+
+   6036 libardo   20   0 1174664  34468  25280 S   7.7   1.1   0:04.41 robot_s+
+   6283 libardo   20   0   14856   5644   3492 R   7.7   0.2   0:00.04 top
+      1 root      20   0   23572  13188   9292 S   0.0   0.4   0:05.71 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.01 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+

@@ -1,0 +1,7 @@
+modo: ros2_control  (tipo /cmd_vel: geometry_msgs/msg/TwistStamped)
+x inicial: 0.000 m
+publicando 5 s reales = 4.76 s de simulacion (factor ~0.95)
+distancia mientras publicaba: 0.930 m  (esperado ~0.95 m)
+velocidad media reportada (2a mitad): 0.204 m/s
+3 s SIN publicar: velocidad = 0.000 m/s, avance extra = 0.118 m
+veredicto: SE DETIENE SOLO

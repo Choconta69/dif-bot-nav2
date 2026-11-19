@@ -1,0 +1,7 @@
+modo: plugin_gazebo  (tipo /cmd_vel: geometry_msgs/msg/Twist)
+x inicial: -0.000 m
+publicando 5 s reales = 4.75 s de simulacion (factor ~0.95)
+distancia mientras publicaba: 0.946 m  (esperado ~0.95 m)
+velocidad media reportada (2a mitad): 0.200 m/s
+3 s SIN publicar: velocidad = 0.200 m/s, avance extra = 0.576 m
+veredicto: NO SE DETIENE SOLO (mantiene la ultima orden)

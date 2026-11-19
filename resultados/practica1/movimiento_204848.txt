@@ -1,0 +1,85 @@
+== modo: ros2_control  tipo: geometry_msgs/msg/TwistStamped  hora: Wed Nov 18 08:48:52 PM -05 2026
+Traceback (most recent call last):
+  File "/opt/ros/kilted/bin/ros2", line 33, in <module>
+    sys.exit(load_entry_point('ros2cli==0.38.3', 'console_scripts', 'ros2')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/kilted/lib/python3.12/site-packages/ros2cli/cli.py", line 91, in main
+    rc = extension.main(parser=parser, args=args)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/kilted/lib/python3.12/site-packages/ros2topic/command/topic.py", line 41, in main
+    return extension.main(args=args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/kilted/lib/python3.12/site-packages/ros2topic/verb/echo.py", line 170, in main
+    self.subscribe_and_spin(
+  File "/opt/ros/kilted/lib/python3.12/site-packages/ros2topic/verb/echo.py", line 211, in subscribe_and_spin
+    rclpy.spin_until_future_complete(node, self.future)
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/__init__.py", line 351, in spin_until_future_complete
+    executor.spin_until_future_complete(future, timeout_sec)
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/executors.py", line 421, in spin_until_future_complete
+    self._spin_once_until_future_complete(future, timeout_sec)
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/executors.py", line 1022, in _spin_once_until_future_complete
+    self._spin_once_impl(timeout_sec, future.done)
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/executors.py", line 1005, in _spin_once_impl
+    raise exception
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/task.py", line 321, in _execute_coroutine_step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/executors.py", line 669, in handler
+    await call_coroutine()
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/executors.py", line 550, in _execute
+    await await_or_execute(sub.callback, *msg_tuple)
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/executors.py", line 138, in await_or_execute
+    return callback(*args)
+           ^^^^^^^^^^^^^^^
+  File "/opt/ros/kilted/lib/python3.12/site-packages/ros2topic/verb/echo.py", line 266, in _subscriber_callback
+    print(submsg, end=line_end)
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+x inicial: A message was lost!!!
+== publicando 0.2 m/s durante 5 s
+== espera 3 s sin publicar
+velocidad final (debe ser ~0): 4.805319562013081e-19
+Traceback (most recent call last):
+  File "/opt/ros/kilted/bin/ros2", line 33, in <module>
+    sys.exit(load_entry_point('ros2cli==0.38.3', 'console_scripts', 'ros2')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/kilted/lib/python3.12/site-packages/ros2cli/cli.py", line 91, in main
+    rc = extension.main(parser=parser, args=args)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/kilted/lib/python3.12/site-packages/ros2topic/command/topic.py", line 41, in main
+    return extension.main(args=args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/kilted/lib/python3.12/site-packages/ros2topic/verb/echo.py", line 170, in main
+    self.subscribe_and_spin(
+  File "/opt/ros/kilted/lib/python3.12/site-packages/ros2topic/verb/echo.py", line 211, in subscribe_and_spin
+    rclpy.spin_until_future_complete(node, self.future)
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/__init__.py", line 351, in spin_until_future_complete
+    executor.spin_until_future_complete(future, timeout_sec)
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/executors.py", line 421, in spin_until_future_complete
+    self._spin_once_until_future_complete(future, timeout_sec)
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/executors.py", line 1022, in _spin_once_until_future_complete
+    self._spin_once_impl(timeout_sec, future.done)
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/executors.py", line 1005, in _spin_once_impl
+    raise exception
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/task.py", line 321, in _execute_coroutine_step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/executors.py", line 669, in handler
+    await call_coroutine()
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/executors.py", line 550, in _execute
+    await await_or_execute(sub.callback, *msg_tuple)
+  File "/opt/ros/kilted/lib/python3.12/site-packages/rclpy/executors.py", line 138, in await_or_execute
+    return callback(*args)
+           ^^^^^^^^^^^^^^^
+  File "/opt/ros/kilted/lib/python3.12/site-packages/ros2topic/verb/echo.py", line 266, in _subscriber_callback
+    print(submsg, end=line_end)
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+x final: A message was lost!!!
+  File "<string>", line 1
+    print(round(A message was lost!!!-(A message was lost!!!),3))
+                ^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+distancia:  m (esperado ~1.0 m)
