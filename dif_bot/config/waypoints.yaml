@@ -1,0 +1,19 @@
+mission_name: "Patrullaje Autonomo dif_bot"
+frame_id: "map"
+waypoints:
+  - name: "Punto_1_Zona_Sur"
+    x: 0.30
+    y: -1.80
+    yaw: 0.00
+  - name: "Punto_2_Corredor_Central"
+    x: -0.25
+    y: 0.40
+    yaw: 1.57
+  - name: "Punto_3_Zona_Norte"
+    x: 0.70
+    y: 2.15
+    yaw: 3.14
+  - name: "Punto_4_Retorno_Base"
+    x: 0.00
+    y: 0.00
+    yaw: 0.00
