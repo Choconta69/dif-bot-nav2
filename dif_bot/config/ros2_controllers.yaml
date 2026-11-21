@@ -18,7 +18,7 @@ diff_drive_controller:
 
     base_frame_id: base_link
     odom_frame_id: odom
-    enable_odom_tf: true
+    enable_odom_tf: false
     open_loop: false
     publish_rate: 30.0
     cmd_vel_timeout: 0.5
@@ -40,3 +40,5 @@ diff_drive_controller:
         has_acceleration_limits: true
         max_acceleration: 2.0
         min_acceleration: -2.0
+    pose_covariance_diagonal: [0.001, 0.001, 1000000.0, 1000000.0, 1000000.0, 0.01]
+    twist_covariance_diagonal: [0.001, 0.001, 1000000.0, 1000000.0, 1000000.0, 0.01]

@@ -3,7 +3,7 @@ project(dif_bot)
 
 find_package(ament_cmake REQUIRED)
 
-install(DIRECTORY urdf launch config worlds rviz
+install(DIRECTORY urdf launch config worlds rviz maps
   DESTINATION share/${PROJECT_NAME})
 
 ament_package()

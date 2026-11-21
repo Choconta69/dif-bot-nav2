@@ -104,6 +104,7 @@ def generate_launch_description():
     return LaunchDescription([
         # RViz y la GUI de Gazebo fallan bajo Wayland sin esto
         SetEnvironmentVariable('QT_QPA_PLATFORM', 'xcb'),
+        SetEnvironmentVariable('LIBGL_ALWAYS_SOFTWARE', '1'),
         DeclareLaunchArgument('use_ros2_control', default_value='false'),
         DeclareLaunchArgument('use_camera', default_value='false'),
         DeclareLaunchArgument('gui', default_value='false'),

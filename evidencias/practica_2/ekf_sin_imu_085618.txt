@@ -1,0 +1,9 @@
+modo: ros2_control
+inicio /odom         : x=0.000 y=0.000 yaw=0.0 deg
+inicio /odom_filtered: x=0.000 y=0.000 yaw=0.0 deg
+final  /odom         : x=1.105 y=0.740 yaw=2.4 deg
+final  /odom_filtered: x=1.095 y=0.756 yaw=1.9 deg
+diferencia final     : dx=0.0100 m  dy=-0.0160 m  dyaw=0.547 deg
+diferencia maxima    : |dx|=0.0472 m  |dy|=0.0301 m  |dyaw|=5.830 deg
+diferencia RMS       : dx=0.0210 m  dy=0.0126 m  dyaw=2.713 deg
+muestras: 187
