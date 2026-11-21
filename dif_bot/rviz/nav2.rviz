@@ -1,0 +1,87 @@
+Panels:
+- Class: rviz_common/Displays
+  Name: Displays
+Visualization Manager:
+  Class: ""
+  Displays:
+  - Class: rviz_default_plugins/Grid
+    Name: Grid
+    Enabled: true
+  - Class: rviz_default_plugins/RobotModel
+    Name: RobotModel
+    Enabled: true
+    Description Topic:
+      Value: /robot_description
+      Depth: 5
+      Durability Policy: Transient Local
+      History Policy: Keep Last
+      Reliability Policy: Reliable
+  - Class: rviz_default_plugins/Map
+    Name: Map
+    Enabled: true
+    Alpha: 0.85
+    Color Scheme: map
+    Topic:
+      Value: /map
+      Depth: 1
+      Durability Policy: Transient Local
+      History Policy: Keep Last
+      Reliability Policy: Reliable
+  - Class: rviz_default_plugins/Map
+    Name: GlobalCostmap
+    Enabled: true
+    Alpha: 0.35
+    Color Scheme: costmap
+    Topic:
+      Value: /global_costmap/costmap
+  - Class: rviz_default_plugins/Map
+    Name: LocalCostmap
+    Enabled: true
+    Alpha: 0.45
+    Color Scheme: costmap
+    Topic:
+      Value: /local_costmap/costmap
+  - Class: rviz_default_plugins/LaserScan
+    Name: LaserScan
+    Enabled: true
+    Size (m): 0.05
+    Style: Points
+    Topic:
+      Value: /scan
+      Depth: 5
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Reliability Policy: Best Effort
+  - Class: rviz_default_plugins/Path
+    Name: GlobalPlan
+    Enabled: true
+    Color: 0; 255; 0
+    Topic:
+      Value: /plan
+  - Class: rviz_default_plugins/Path
+    Name: LocalPlan
+    Enabled: true
+    Color: 255; 170; 0
+    Topic:
+      Value: /local_plan
+  Global Options:
+    Fixed Frame: map
+    Frame Rate: 15
+  Tools:
+  - Class: rviz_default_plugins/Interact
+  - Class: rviz_default_plugins/MoveCamera
+  - Class: rviz_default_plugins/SetInitialPose
+    Topic:
+      Value: /initialpose
+  - Class: rviz_default_plugins/SetGoal
+    Topic:
+      Value: /goal_pose
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 10
+      Pitch: 1.35
+      Yaw: 1.57
+Window Geometry:
+  Displays:
+    collapsed: false
